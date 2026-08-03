@@ -2,42 +2,277 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Inicio | Código Ágil - Software & Ciberseguridad">
-	<div class="bg-[#FFFFFF] rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row items-center border border-[#D8DEE6]">
-		<div class="p-10 md:p-16 md:w-1/2 reveal">
-			<span class="text-[#69BC83] font-bold tracking-wider uppercase text-sm mb-2 block">Bienvenidos</span>
-			<h1 class="text-4xl md:text-5xl font-extrabold text-[#687284] mb-6 leading-tight tracking-tight">
-				Convertimos tus ideas en <br/> <span class="text-[#69BC83]">código seguro y escalable.</span>
+<Layout title="Inicio | Código Ágil - Software & Ciberseguridad" fullWidth={true}>
+	<section class="pt-32 pb-20 bg-[#FFFFFF] w-full">
+		<div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 reveal">
+			<span class="text-[#69BC83] font-bold tracking-widest uppercase text-sm mb-6 block">Bienvenidos a Código Ágil</span>
+			<h1 class="text-5xl md:text-7xl font-extrabold text-[#687284] mb-8 leading-tight tracking-tight">
+				Creamos software que <br class="hidden md:block" />
+				<span class="text-[#69BC83]">impulsa tu negocio.</span>
 			</h1>
-			<p class="text-lg text-[#687284] mb-8 leading-relaxed">
-				Desarrollamos arquitecturas escalables y blindamos tu infraestructura digital. Transformamos tus desafíos complejos en sistemas seguros y eficientes.
+			<p class="text-xl text-[#687284] mb-12 leading-relaxed max-w-3xl mx-auto opacity-90">
+				Diseñamos y desarrollamos soluciones digitales a medida para empresas que quieren crecer, automatizar y destacar en el mundo digital.
 			</p>
-			<div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-				<a href="/servicios" class="bg-[#69BC83] text-[#FFFFFF] text-center px-8 py-3 rounded-full font-semibold hover:bg-[#56A772] transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1">
-					Explorar Servicios
+			<div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+				<a href="/contacto" class="bg-[#69BC83] text-[#FFFFFF] text-center px-10 py-4 rounded-full font-bold hover:bg-[#56A772] transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1 text-lg">
+					Hablemos de tu proyecto
 				</a>
-				<a href="/contacto" class="bg-[#E8F8EE] text-[#69BC83] text-center px-8 py-3 rounded-full font-semibold hover:bg-[#AEE8C0] transition-all duration-300 hover:-translate-y-1">
-					Auditoría Gratuita
+				<a href="/servicios" class="bg-[#E8F8EE] text-[#69BC83] text-center px-10 py-4 rounded-full font-bold hover:bg-[#AEE8C0] transition-all duration-300 hover:-translate-y-1 text-lg">
+					Ver nuestros servicios
 				</a>
 			</div>
 		</div>
-		<div class="md:w-1/2 bg-[#000000] w-full min-h-[400px] p-8 flex items-center justify-center relative overflow-hidden reveal" style="transition-delay: 0.2s;">
-			<div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#69BC83] via-[#000000] to-[#000000]"></div>
-			<div class="relative z-10 text-left w-full max-w-sm bg-[#1A1D24] p-6 rounded-xl border border-[#2D333B] shadow-2xl transition-transform hover:scale-105 duration-500">
-				<div class="flex space-x-2 mb-4">
-					<div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
-					<div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
-					<div class="w-3 h-3 rounded-full bg-[#27C93F]"></div>
-				</div>
-				<pre class="text-[#69BC83] font-mono text-sm leading-relaxed">
-> Iniciando escaneo de red...
-> Vulnerabilidades detectadas: 0
-> Encriptación AES-256: Activa
-> Despliegue de software: Exitoso
-> Sistema protegido y operando.
-<span class="animate-pulse text-[#FFFFFF]">_</span>
-				</pre>
-			</div>
+	</section>
+
+	<div class="w-full overflow-hidden bg-[#F8F9FA] border-y border-[#D8DEE6] py-6 flex items-center reveal">
+		<div class="animate-marquee whitespace-nowrap flex space-x-12 items-center">
+			<span class="text-2xl font-bold text-[#687284]/40 uppercase tracking-widest">ASTRO</span>
+			<span class="text-[#69BC83] font-bold">·</span>
+			<span class="text-2xl font-bold text-[#687284]/40 uppercase tracking-widest">REACT</span>
+			<span class="text-[#69BC83] font-bold">·</span>
+			<span class="text-2xl font-bold text-[#687284]/40 uppercase tracking-widest">NODE.JS</span>
+			<span class="text-[#69BC83] font-bold">·</span>
+			<span class="text-2xl font-bold text-[#687284]/40 uppercase tracking-widest">SPRING BOOT</span>
+			<span class="text-[#69BC83] font-bold">·</span>
+			<span class="text-2xl font-bold text-[#687284]/40 uppercase tracking-widest">PYTHON</span>
+			<span class="text-[#69BC83] font-bold">·</span>
+			<span class="text-2xl font-bold text-[#687284]/40 uppercase tracking-widest">POSTGRESQL</span>
+			<span class="text-[#69BC83] font-bold">·</span>
+			<span class="text-2xl font-bold text-[#687284]/40 uppercase tracking-widest">AWS</span>
+			<span class="text-[#69BC83] font-bold">·</span>
+			<span class="text-2xl font-bold text-[#687284]/40 uppercase tracking-widest">DOCKER</span>
+			<span class="text-[#69BC83] font-bold">·</span>
+			<span class="text-2xl font-bold text-[#687284]/40 uppercase tracking-widest">ASTRO</span>
+			<span class="text-[#69BC83] font-bold">·</span>
+			<span class="text-2xl font-bold text-[#687284]/40 uppercase tracking-widest">REACT</span>
+			<span class="text-[#69BC83] font-bold">·</span>
+			<span class="text-2xl font-bold text-[#687284]/40 uppercase tracking-widest">NODE.JS</span>
+			<span class="text-[#69BC83] font-bold">·</span>
+			<span class="text-2xl font-bold text-[#687284]/40 uppercase tracking-widest">SPRING BOOT</span>
+			<span class="text-[#69BC83] font-bold">·</span>
+			<span class="text-2xl font-bold text-[#687284]/40 uppercase tracking-widest">PYTHON</span>
+			<span class="text-[#69BC83] font-bold">·</span>
+			<span class="text-2xl font-bold text-[#687284]/40 uppercase tracking-widest">POSTGRESQL</span>
+			<span class="text-[#69BC83] font-bold">·</span>
+			<span class="text-2xl font-bold text-[#687284]/40 uppercase tracking-widest">AWS</span>
+			<span class="text-[#69BC83] font-bold">·</span>
+			<span class="text-2xl font-bold text-[#687284]/40 uppercase tracking-widest">DOCKER</span>
 		</div>
 	</div>
+
+	<section class="py-24 bg-[#FFFFFF] w-full">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="text-center max-w-3xl mx-auto mb-20 reveal">
+				<h2 class="text-4xl md:text-5xl font-extrabold text-[#687284] mb-6 tracking-tight">¿Qué hacemos?</h2>
+				<p class="text-xl text-[#687284] opacity-80 leading-relaxed">
+					Diseñamos y desarrollamos soluciones tecnológicas integrales para cubrir el ciclo de vida de tu producto de principio a fin.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+				<div class="reveal" style="transition-delay: 0.1s;">
+					<div class="w-14 h-14 bg-[#E8F8EE] text-[#69BC83] rounded-2xl flex items-center justify-center mb-6">
+						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+					</div>
+					<h3 class="text-2xl font-bold text-[#687284] mb-4">Desarrollo Web</h3>
+					<p class="text-[#687284] opacity-90 leading-relaxed mb-6">Sitios web rápidos, modernos y optimizados. Creamos interfaces diseñadas para el rendimiento, la accesibilidad y la escala.</p>
+				</div>
+
+				<div class="reveal" style="transition-delay: 0.2s;">
+					<div class="w-14 h-14 bg-[#E8F8EE] text-[#69BC83] rounded-2xl flex items-center justify-center mb-6">
+						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+					</div>
+					<h3 class="text-2xl font-bold text-[#687284] mb-4">Software a Medida</h3>
+					<p class="text-[#687284] opacity-90 leading-relaxed mb-6">Sistemas diseñados específicamente para las necesidades de tu negocio. Backends seguros que funcionan bajo carga.</p>
+				</div>
+
+				<div class="reveal" style="transition-delay: 0.3s;">
+					<div class="w-14 h-14 bg-[#E8F8EE] text-[#69BC83] rounded-2xl flex items-center justify-center mb-6">
+						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+					</div>
+					<h3 class="text-2xl font-bold text-[#687284] mb-4">Aplicaciones</h3>
+					<p class="text-[#687284] opacity-90 leading-relaxed mb-6">Aplicaciones web y móviles pensadas para tus usuarios, con arquitecturas robustas y alta disponibilidad.</p>
+				</div>
+
+				<div class="reveal" style="transition-delay: 0.4s;">
+					<div class="w-14 h-14 bg-[#E8F8EE] text-[#69BC83] rounded-2xl flex items-center justify-center mb-6">
+						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+					</div>
+					<h3 class="text-2xl font-bold text-[#687284] mb-4">Inteligencia Artificial</h3>
+					<p class="text-[#687284] opacity-90 leading-relaxed mb-6">Implemente soluciones de IA confiables, automatización y machine learning que creen valor comercial real.</p>
+				</div>
+
+				<div class="reveal" style="transition-delay: 0.5s;">
+					<div class="w-14 h-14 bg-[#E8F8EE] text-[#69BC83] rounded-2xl flex items-center justify-center mb-6">
+						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+					</div>
+					<h3 class="text-2xl font-bold text-[#687284] mb-4">Diseño UX/UI</h3>
+					<p class="text-[#687284] opacity-90 leading-relaxed mb-6">Interfaces intuitivas que convierten ideas en experiencias. Flujos de usuario claros y componentes reutilizables.</p>
+				</div>
+
+				<div class="reveal" style="transition-delay: 0.6s;">
+					<div class="w-14 h-14 bg-[#E8F8EE] text-[#69BC83] rounded-2xl flex items-center justify-center mb-6">
+						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+					</div>
+					<h3 class="text-2xl font-bold text-[#687284] mb-4">Cloud & DevOps</h3>
+					<p class="text-[#687284] opacity-90 leading-relaxed mb-6">Infraestructura escalable, segura y preparada para crecer. Testing automatizado y pipelines de despliegue continuo.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-20 bg-[#E8F8EE] w-full">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+				<div class="reveal" style="transition-delay: 0.1s;">
+					<h4 class="text-5xl font-extrabold text-[#69BC83] mb-2">+15</h4>
+					<p class="text-[#687284] font-medium">Proyectos realizados</p>
+				</div>
+				<div class="reveal" style="transition-delay: 0.2s;">
+					<h4 class="text-5xl font-extrabold text-[#69BC83] mb-2">+3</h4>
+					<p class="text-[#687284] font-medium">Años desarrollando</p>
+				</div>
+				<div class="reveal" style="transition-delay: 0.3s;">
+					<h4 class="text-5xl font-extrabold text-[#69BC83] mb-2">99%</h4>
+					<p class="text-[#687284] font-medium">Clientes satisfechos</p>
+				</div>
+				<div class="reveal" style="transition-delay: 0.4s;">
+					<h4 class="text-5xl font-extrabold text-[#69BC83] mb-2">24/7</h4>
+					<p class="text-[#687284] font-medium">Soporte técnico</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-24 bg-[#FFFFFF] w-full">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="text-center max-w-3xl mx-auto mb-20 reveal">
+				<span class="text-[#69BC83] font-bold tracking-widest uppercase text-sm mb-4 block">No hacemos solo código</span>
+				<h2 class="text-4xl md:text-5xl font-extrabold text-[#687284] mb-6 tracking-tight">Transformamos ideas en productos digitales.</h2>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
+				<div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-[#D8DEE6] -translate-y-1/2 z-0"></div>
+
+				<div class="bg-[#FFFFFF] p-8 rounded-3xl border border-[#D8DEE6] relative z-10 text-center reveal" style="transition-delay: 0.1s;">
+					<span class="text-5xl font-extrabold text-[#E8F8EE] block mb-4">01</span>
+					<h3 class="text-xl font-bold text-[#687284] mb-2">Descubrimiento</h3>
+					<p class="text-sm text-[#687284] opacity-80">Entendemos tu negocio y qué problema necesitas solucionar.</p>
+				</div>
+
+				<div class="bg-[#FFFFFF] p-8 rounded-3xl border border-[#D8DEE6] relative z-10 text-center reveal" style="transition-delay: 0.2s;">
+					<span class="text-5xl font-extrabold text-[#E8F8EE] block mb-4">02</span>
+					<h3 class="text-xl font-bold text-[#687284] mb-2">Estrategia</h3>
+					<p class="text-sm text-[#687284] opacity-80">Definimos la solución, la arquitectura y creamos la experiencia.</p>
+				</div>
+
+				<div class="bg-[#FFFFFF] p-8 rounded-3xl border border-[#D8DEE6] relative z-10 text-center reveal" style="transition-delay: 0.3s;">
+					<span class="text-5xl font-extrabold text-[#E8F8EE] block mb-4">03</span>
+					<h3 class="text-xl font-bold text-[#687284] mb-2">Desarrollo</h3>
+					<p class="text-sm text-[#687284] opacity-80">Convertimos el diseño en un producto totalmente funcional.</p>
+				</div>
+
+				<div class="bg-[#FFFFFF] p-8 rounded-3xl border border-[#D8DEE6] relative z-10 text-center reveal" style="transition-delay: 0.4s;">
+					<span class="text-5xl font-extrabold text-[#E8F8EE] block mb-4">04</span>
+					<h3 class="text-xl font-bold text-[#687284] mb-2">Testing</h3>
+					<p class="text-sm text-[#687284] opacity-80">Probamos, optimizamos y aseguramos los estándares de calidad.</p>
+				</div>
+
+				<div class="bg-[#FFFFFF] p-8 rounded-3xl border border-[#D8DEE6] relative z-10 text-center reveal" style="transition-delay: 0.5s;">
+					<span class="text-5xl font-extrabold text-[#E8F8EE] block mb-4">05</span>
+					<h3 class="text-xl font-bold text-[#687284] mb-2">Lanzamiento</h3>
+					<p class="text-sm text-[#687284] opacity-80">Ponemos tu producto en producción y listos para escalar.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-24 bg-[#F8F9FA] border-t border-[#D8DEE6] w-full">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="text-center max-w-3xl mx-auto mb-20 reveal">
+				<h2 class="text-4xl md:text-5xl font-extrabold text-[#687284] mb-6 tracking-tight">No buscamos hacer más software.</h2>
+				<p class="text-2xl text-[#69BC83] font-bold">Buscamos hacer software que tenga sentido.</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+				<div class="reveal" style="transition-delay: 0.1s;">
+					<span class="text-[#69BC83] font-bold text-lg mb-2 block">01 — A medida</span>
+					<h3 class="text-2xl font-bold text-[#687284] mb-3">Soluciones Específicas</h3>
+					<p class="text-[#687284] opacity-90 leading-relaxed">No usamos soluciones genéricas ni plantillas prefabricadas cuando tu negocio necesita algo único que resuelva tus problemas reales.</p>
+				</div>
+
+				<div class="reveal" style="transition-delay: 0.2s;">
+					<span class="text-[#69BC83] font-bold text-lg mb-2 block">02 — Transparencia</span>
+					<h3 class="text-2xl font-bold text-[#687284] mb-3">Comunicación Clara</h3>
+					<p class="text-[#687284] opacity-90 leading-relaxed">Sabes exactamente qué estamos haciendo, por qué lo hacemos y en qué etapa del proceso nos encontramos en todo momento.</p>
+				</div>
+
+				<div class="reveal" style="transition-delay: 0.3s;">
+					<span class="text-[#69BC83] font-bold text-lg mb-2 block">03 — Escalable</span>
+					<h3 class="text-2xl font-bold text-[#687284] mb-3">Visión a Futuro</h3>
+					<p class="text-[#687284] opacity-90 leading-relaxed">Construimos pensando en lo que necesitarás mañana. Arquitecturas limpias que pueden crecer junto con la demanda de tu empresa.</p>
+				</div>
+
+				<div class="reveal" style="transition-delay: 0.4s;">
+					<span class="text-[#69BC83] font-bold text-lg mb-2 block">04 — Enfocado en resultados</span>
+					<h3 class="text-2xl font-bold text-[#687284] mb-3">Impacto Real</h3>
+					<p class="text-[#687284] opacity-90 leading-relaxed">La tecnología es solo el medio. El resultado comercial, la optimización de tu tiempo y el aumento de tus ventas es lo verdaderamente importante.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-24 bg-[#FFFFFF] w-full">
+		<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="text-center mb-16 reveal">
+				<h2 class="text-4xl font-extrabold text-[#687284] mb-4 tracking-tight">Preguntas Frecuentes</h2>
+			</div>
+
+			<div class="space-y-6">
+				<div class="bg-[#F8F9FA] p-8 rounded-3xl border border-[#D8DEE6] reveal">
+					<h3 class="text-xl font-bold text-[#687284] mb-3">¿Cuánto demora desarrollar un proyecto?</h3>
+					<p class="text-[#687284] opacity-90 leading-relaxed">Depende completamente de la complejidad y alcance. Un sitio web corporativo puede tomar de 3 a 6 semanas, mientras que un software a medida o plataforma SaaS puede requerir de 2 a 6 meses. Siempre definimos un cronograma claro antes de iniciar.</p>
+				</div>
+
+				<div class="bg-[#F8F9FA] p-8 rounded-3xl border border-[#D8DEE6] reveal" style="transition-delay: 0.1s;">
+					<h3 class="text-xl font-bold text-[#687284] mb-3">¿Trabajan con empresas pequeñas?</h3>
+					<p class="text-[#687284] opacity-90 leading-relaxed">Sí, trabajamos con startups, pymes y grandes corporaciones. Adaptamos nuestra metodología y propuesta tecnológica al tamaño, presupuesto y objetivos específicos de cada cliente.</p>
+				</div>
+
+				<div class="bg-[#F8F9FA] p-8 rounded-3xl border border-[#D8DEE6] reveal" style="transition-delay: 0.2s;">
+					<h3 class="text-xl font-bold text-[#687284] mb-3">¿Pueden mantener o mejorar un sistema existente?</h3>
+					<p class="text-[#687284] opacity-90 leading-relaxed">Absolutamente. Realizamos auditorías de código legado (legacy code), refactorización, migraciones a la nube y optimización de rendimiento para sistemas que ya están operando.</p>
+				</div>
+
+				<div class="bg-[#F8F9FA] p-8 rounded-3xl border border-[#D8DEE6] reveal" style="transition-delay: 0.3s;">
+					<h3 class="text-xl font-bold text-[#687284] mb-3">¿Qué tecnologías utilizan?</h3>
+					<p class="text-[#687284] opacity-90 leading-relaxed">Elegimos la herramienta adecuada para cada problema. Principalmente trabajamos con React, Astro, Node.js, Python, Java, .NET y bases de datos como PostgreSQL, alojando las soluciones en entornos Cloud como AWS o Azure.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-20 mb-10 w-full">
+		<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="bg-[#E8F8EE] rounded-[3rem] p-12 md:p-20 text-center reveal border border-[#D8DEE6]">
+				<h2 class="text-4xl font-extrabold text-[#687284] mb-6 tracking-tight">¿Listo para iniciar tu próximo proyecto?</h2>
+				<p class="text-xl text-[#687284] opacity-80 mb-10 max-w-2xl mx-auto">Conversemos sobre tus ideas y descubramos cómo podemos ayudarte.</p>
+				<a href="/contacto" class="inline-block bg-[#69BC83] text-[#FFFFFF] font-bold py-4 px-12 rounded-full hover:bg-[#56A772] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 text-xl">
+					Solicitar cotización
+				</a>
+			</div>
+		</div>
+	</section>
 </Layout>
+
+<style>
+	@keyframes marquee {
+		0% { transform: translateX(0%); }
+		100% { transform: translateX(-50%); }
+	}
+	.animate-marquee {
+		display: flex;
+		width: max-content;
+		animation: marquee 30s linear infinite;
+	}
+</style>
