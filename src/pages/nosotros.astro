@@ -1,37 +1,176 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const hero = {
+  badge: "Nuestra Identidad",
+  title: "Construimos tecnología",
+  highlight: "con propósito.",
+  description: "Somos un equipo enfocado en transformar ideas y necesidades reales en soluciones digitales modernas, funcionales y escalables. No solo escribimos código, entendemos tu negocio."
+};
+
+const misionVision = [
+  {
+    title: "Nuestra misión",
+    highlight: "Democratizar la tecnología de alto nivel.",
+    text: "Trabajamos para hacer que el software de calidad empresarial sea accesible, permitiendo a las empresas optimizar sus procesos y destacar en su industria sin importar su tamaño.",
+    bg: "bg-[#F8F9FA]"
+  },
+  {
+    title: "Nuestra visión",
+    highlight: "Ser tu socio tecnológico estratégico.",
+    text: "Buscamos ser reconocidos por la excelencia de nuestro código, la transparencia absoluta de nuestra gestión y el impacto comercial real que generamos en quienes confían en nosotros.",
+    bg: "bg-[#E8F8EE]"
+  }
+];
+
+const historia = [
+  { 
+    year: "2024", 
+    title: "El comienzo", 
+    text: "Nace la idea de crear soluciones digitales enfocadas en empresas que necesitaban dar el salto tecnológico sin enfrentarse a complejidades innecesarias ni lenguajes técnicos incomprensibles." 
+  },
+  { 
+    year: "2025", 
+    title: "Primeros desarrollos", 
+    text: "Comenzamos a construir y desplegar nuestros primeros productos a medida, validando nuestra metodología ágil centrada en la calidad del código y la experiencia del usuario final." 
+  },
+  { 
+    year: "2026", 
+    title: "Expansión y Ciberseguridad", 
+    text: "Ampliamos nuestra oferta integrando arquitecturas Cloud e Inteligencia Artificial, consolidándonos como socios estratégicos integrales para nuevos y mayores desafíos comerciales." 
+  }
+];
+
+const valores = [
+  { num: "01", title: "Innovación Activa", text: "Buscamos constantemente nuevas y mejores formas de resolver problemas complejos. No nos conformamos con lo establecido." },
+  { num: "02", title: "Transparencia Total", text: "Comunicación clara, honesta y directa durante cada etapa del proyecto. Sabes qué hacemos y por qué lo hacemos." },
+  { num: "03", title: "Calidad Intransable", text: "Nos preocupamos obsesivamente por entregar soluciones robustas, seguras, escalables y altamente mantenibles." },
+  { num: "04", title: "Compromiso Real", text: "Nos involucramos técnica y estratégicamente en cada proyecto de nuestros clientes como si fuera nuestro propio negocio." }
+];
+
+const stack = [
+  { category: "Frontend", items: ["Astro", "React", "Next.js", "Tailwind CSS"] },
+  { category: "Backend", items: ["Node.js", "Spring Boot", "Python", ".NET"] },
+  { category: "Bases de Datos", items: ["PostgreSQL", "MySQL", "MongoDB", "Redis"] },
+  { category: "Infraestructura", items: ["AWS", "Docker", "Vercel", "GitHub Actions"] }
+];
 ---
 
-<Layout title="Nosotros | Código Ágil">
-	<div class="bg-[#E8F8EE] p-10 md:p-16 rounded-3xl shadow-sm border border-[#D8DEE6] max-w-4xl mx-auto reveal">
-		<span class="text-[#69BC83] font-bold uppercase tracking-widest text-sm mb-3 block text-center">Nuestra Identidad</span>
-		<h1 class="text-4xl md:text-5xl font-extrabold mb-10 text-center text-[#687284] tracking-tight">Expertos en Código y Seguridad</h1>
+<Layout title="Nosotros | Código Ágil" fullWidth={true}>
+	<section class="pt-32 pb-24 bg-[#FFFFFF] w-full relative overflow-hidden">
+		<div class="absolute top-0 right-0 w-1/2 h-full bg-[#FAFAFA] -skew-x-12 translate-x-32 -z-10"></div>
 		
-		<div class="space-y-6 text-lg text-[#687284] leading-relaxed">
-			<p>
-				En <strong>Código Ágil</strong>, entendemos que en la actualidad no basta con que un software funcione; debe ser impenetrable. Nacimos con la visión de fusionar el desarrollo de software de alta calidad con estándares militares de ciberseguridad.
-			</p>
-			<p>
-				Nuestro equipo está compuesto por ingenieros de software, arquitectos de sistemas y hackers éticos con más de una década de experiencia protegiendo datos corporativos y construyendo plataformas de misión crítica.
-			</p>
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+			<div class="reveal relative z-10">
+				<span class="text-[#69BC83] font-bold tracking-widest uppercase text-sm mb-6 block">{hero.badge}</span>
+				<h1 class="text-5xl md:text-7xl font-extrabold text-[#687284] mb-8 leading-tight tracking-tight">
+					{hero.title} <br />
+					<span class="text-[#69BC83]">{hero.highlight}</span>
+				</h1>
+				<p class="text-xl text-[#687284] leading-relaxed opacity-90">
+					{hero.description}
+				</p>
+			</div>
+			
+			<div class="hidden lg:flex justify-end reveal relative z-10" style="transition-delay: 0.2s;">
+				<div class="grid grid-cols-2 gap-4">
+					<div class="w-48 h-64 bg-[#E8F8EE] rounded-3xl translate-y-12"></div>
+					<div class="w-48 h-64 bg-[#69BC83] rounded-3xl"></div>
+				</div>
+			</div>
 		</div>
+	</section>
 
-		<div class="mt-12 pt-12 border-t border-[#D8DEE6]">
-			<h2 class="text-2xl font-bold text-[#687284] mb-8 tracking-tight reveal">Nuestros Pilares</h2>
-			<ul class="space-y-5">
-				<li class="flex items-start bg-[#FFFFFF] p-5 rounded-2xl border border-[#D8DEE6] shadow-sm transition-transform hover:-translate-y-1 duration-300 reveal" style="transition-delay: 0.1s;">
-					<span class="text-[#69BC83] mr-4 font-bold text-xl">✓</span>
-					<span class="text-[#687284] leading-relaxed"><strong>Seguridad por Diseño:</strong> La seguridad no es un parche de último minuto, está integrada desde la primera línea de código.</span>
-				</li>
-				<li class="flex items-start bg-[#FFFFFF] p-5 rounded-2xl border border-[#D8DEE6] shadow-sm transition-transform hover:-translate-y-1 duration-300 reveal" style="transition-delay: 0.2s;">
-					<span class="text-[#69BC83] mr-4 font-bold text-xl">✓</span>
-					<span class="text-[#687284] leading-relaxed"><strong>Transparencia Absoluta:</strong> Comunicación clara sobre riesgos, arquitecturas y tiempos de entrega.</span>
-				</li>
-				<li class="flex items-start bg-[#FFFFFF] p-5 rounded-2xl border border-[#D8DEE6] shadow-sm transition-transform hover:-translate-y-1 duration-300 reveal" style="transition-delay: 0.3s;">
-					<span class="text-[#69BC83] mr-4 font-bold text-xl">✓</span>
-					<span class="text-[#687284] leading-relaxed"><strong>Innovación Continua:</strong> Mantenemos a nuestros especialistas actualizados con las últimas amenazas y tecnologías.</span>
-				</li>
-			</ul>
+	<section class="w-full">
+		<div class="grid grid-cols-1 md:grid-cols-2">
+			{misionVision.map((item, index) => (
+				<div class={`${item.bg} p-16 md:p-24 reveal`} style={`transition-delay: ${index * 0.1}s;`}>
+					<h2 class="text-sm font-bold text-[#69BC83] uppercase tracking-widest mb-4">{item.title}</h2>
+					<h3 class="text-3xl md:text-4xl font-extrabold text-[#687284] mb-6 tracking-tight">{item.highlight}</h3>
+					<p class="text-lg text-[#687284] opacity-90 leading-relaxed max-w-lg">{item.text}</p>
+				</div>
+			))}
 		</div>
-	</div>
+	</section>
+
+	<section class="py-32 bg-[#FFFFFF] w-full">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-16">
+			<div class="lg:col-span-5 reveal">
+				<h2 class="text-4xl md:text-5xl font-extrabold text-[#687284] mb-6 tracking-tight">Nuestra historia</h2>
+				<p class="text-xl text-[#687284] opacity-80 leading-relaxed mb-10">Una idea, un problema real y las ganas de construir algo que funcione de verdad.</p>
+			</div>
+
+			<div class="lg:col-span-7">
+				<div class="relative border-l-2 border-[#E8F8EE] ml-4 md:ml-6">
+					{historia.map((item, index) => (
+						<div class="mb-16 ml-10 relative reveal" style={`transition-delay: ${index * 0.1}s;`}>
+							<span class="absolute -left-[3.4rem] top-0 w-10 h-10 bg-[#69BC83] rounded-full ring-8 ring-[#FFFFFF] flex items-center justify-center text-[#FFFFFF] text-sm font-bold shadow-sm">
+								{item.year.slice(-2)}'
+							</span>
+							<h3 class="text-2xl font-bold text-[#687284] mb-3">{item.title}</h3>
+							<p class="text-lg text-[#687284] opacity-90 leading-relaxed">{item.text}</p>
+						</div>
+					))}
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-32 bg-[#FAFAFA] border-y border-[#D8DEE6] w-full">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="mb-20 reveal">
+				<h2 class="text-4xl md:text-5xl font-extrabold text-[#687284] tracking-tight">Nuestros valores</h2>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+				{valores.map((val, index) => (
+					<div class="bg-[#FFFFFF] p-12 rounded-[2.5rem] relative overflow-hidden reveal hover:shadow-lg transition-shadow duration-500" style={`transition-delay: ${index * 0.1}s;`}>
+						<span class="absolute -bottom-6 -right-2 text-[10rem] font-black text-[#F8F9FA] leading-none pointer-events-none select-none z-0">{val.num}</span>
+						<h3 class="text-2xl font-bold text-[#687284] mb-4 relative z-10">{val.title}</h3>
+						<p class="text-lg text-[#687284] opacity-90 leading-relaxed relative z-10 max-w-md">{val.text}</p>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="py-32 bg-[#FFFFFF] w-full">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="mb-20 reveal">
+				<h2 class="text-4xl md:text-5xl font-extrabold text-[#687284] mb-6 tracking-tight">Stack Tecnológico</h2>
+				<p class="text-xl text-[#687284] opacity-80 leading-relaxed max-w-2xl">Nuestra base tecnológica es moderna, probada y completamente escalable. Seleccionamos la herramienta exacta para cada desafío.</p>
+			</div>
+
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+				{stack.map((group, index) => (
+					<div class="reveal" style={`transition-delay: ${index * 0.1}s;`}>
+						<h3 class="text-sm font-bold text-[#69BC83] uppercase tracking-widest mb-6 border-b border-[#D8DEE6] pb-4">{group.category}</h3>
+						<ul class="space-y-5">
+							{group.items.map(item => (
+								<li class="text-xl font-medium text-[#687284]">{item}</li>
+							))}
+						</ul>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="py-24 my-10 w-full">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="bg-[#000000] rounded-[3rem] p-12 md:p-24 text-center reveal relative overflow-hidden">
+				<div class="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#69BC83] via-[#000000] to-[#000000]"></div>
+				
+				<div class="relative z-10">
+					<h2 class="text-4xl md:text-6xl font-extrabold text-[#FFFFFF] mb-8 tracking-tight">¿Construimos algo juntos?</h2>
+					<p class="text-xl text-[#FFFFFF] opacity-80 mb-12 max-w-3xl mx-auto leading-relaxed">
+						Cuéntanos qué tienes en mente y conversemos sobre cómo podemos convertir tu idea en una solución digital de alto impacto.
+					</p>
+					<a href="/contacto" class="inline-block bg-[#69BC83] text-[#FFFFFF] font-bold py-5 px-12 rounded-full hover:bg-[#56A772] transition-all duration-300 shadow-[0_0_20px_rgb(105,188,131,0.4)] hover:shadow-[0_0_30px_rgb(105,188,131,0.6)] hover:-translate-y-1 text-xl">
+						Iniciar un proyecto →
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
 </Layout>
