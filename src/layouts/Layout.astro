@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 
 interface Props {
 	title: string;
@@ -27,9 +28,7 @@ const { title, fullWidth = false } = Astro.props;
 		<main class={`flex-grow w-full ${fullWidth ? '' : 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'}`}>
 			<slot />
 		</main>
-		<footer class="bg-[#E8F8EE] border-t border-[#D8DEE6] py-6 text-center text-sm reveal">
-			<p>&copy; {new Date().getFullYear()} Código Ágil. Todos los derechos reservados.</p>
-		</footer>
+		<Footer />
 		<script>
 			const observer = new IntersectionObserver((entries) => {
 				entries.forEach(entry => {
